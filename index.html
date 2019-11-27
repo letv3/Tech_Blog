@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/styles700.css" media="(max-width: 700px)">
     <link rel="stylesheet" href="css/styles1200.css" media="(min-width: 701px )and (max-width: 1200px)">
-    <link rel="stylesheet" href="css/styles1500.css"  media="(min-width: 1201px) and (max-width: 1500px)" > 
+    <link rel="stylesheet" href="css/styles1500.css"  media="(min-width: 1201px) and (max-width: 1500px)" >
+    <link rel="stylesheet" href="components/fontawesome-free-5.11.2-web/css/all.css">
 
 
 
@@ -22,20 +23,21 @@
 <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
 </head>
 <body id="body">
-<nav id="navbar" class="navbar  fixed-top navbar-expand-lg">
+<nav id="navbar" class="navbar fixed-top navbar-expand-md">
     <a class="navbar-brand" href="index.html"><img style="width: 100%;height: 100%;" src="img/logo.png"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-align-justify"></i>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="collapse navbar-collapse" id="navigation">
         <div class="navbar-nav">
-            <a class="nav-item nav-link" href="info/info.html">about</a>
-            <a class="nav-item nav-link" href="info/contact.html">contact</a>
+            <ul class="navbar-nav text-center">
+                <li class="nav-item"><a class="nav-item nav-link" href="info/info.html"><i class="far fa-question-circle"></i> about</a></li>
+                <li class="nav-item"><a class="nav-item nav-link" href="info/contact.html"><i class="far fa-address-book"></i> contact</a></li>
+                <li class="nav-item"><button id="regbut" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"> registration</button></li>
+            </ul>
 <!--            <a class="nav-item nav-link" id="reg"  href="registration.html">registration</a>-->
         </div>
     </div>
-    <button id="regbut" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">registration</button>
-
 </nav>
 <!--<nav>-->
 <!--&lt;!&ndash;    <div class="header-right">&ndash;&gt;-->
@@ -75,12 +77,12 @@
                     <div class="col-md-8 offset-md-2">
                         <form>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Name</label>
-                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                                <label for="name-form">Name</label>
+                                <input type="text" class="form-control" id="name-form" placeholder="Name">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <label for="mail-form">Email address</label>
+                                <input type="email" class="form-control" id="mail-form" aria-describedby="emailHelp" placeholder="Enter email">
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                             </div>
                         </form>
@@ -173,7 +175,7 @@
 <footer>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3 col-xs-12 text-xs-center">
+            <div class="col-md-3 col-xs-12 text-center text-md-left">
                 <img src="img/logo.png">
             </div>
             <div class="col-md-9 col-xs-12 text-center text-md-right">
@@ -183,7 +185,7 @@
                     <li><a href="articles/neunet.html">Artificial Neural Networks </a></li>
                     <li><a href="articles/chatbot.html">What Are Chatbots?</a></li>
                     <li><a href="articles/airpods.html">New Airpods Pro is here</a></li>
-                     <ull>
+                     <li>
                          <script language="javascript">
                             months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
                             var d=new Date();
@@ -205,7 +207,7 @@
                             document.write("<i> Last updated 'index.html' "+weekday[getDay()]+' '+getDate()+' '+months[getMonth()]+' '+d.getFullYear()+' '+getHours()+':'+getMinutes()+ " GMT</i>")}
 
                          </script>
-                     </ull>
+                     </li>
                 </ul>
 <!--function addZero(i) {
   if (i < 10) {

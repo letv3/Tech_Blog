@@ -16,6 +16,12 @@ footer,nav{
     background: linear-gradient(90deg, rgb(136, 233, 201) 45%, rgb(27, 204, 204) 100%);
     height: auto;
 }
-ul,li,li a,ul ull{
+footer img{
+    margin: 20px 0 0;
+}
+#regbut{
+    margin-top: 5px;
+}
+ul,li,li a,ul{
     color: black;
 }

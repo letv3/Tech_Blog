@@ -12,13 +12,14 @@ $(document).ready(function(){
 
 
 $('#submit-form').click(function(e){
-    var name = $('.form-group input').first().val();
-    var mail = $('.form-group input').eq(1).val();
-
-    $('#regbut').remove();
-    $('.navbar-nav').append('<a>welcome, ' + name + '</a>');
+    let name = $('#name-form').val();
+    var mail = $('#mail-form').val();
+    console.log($('#name-form').val());
+    if (name != '' && mail !=''){
+        $('#regbut').remove();
+        $('.nav-item').last().html('<a><i class="far fa-user-circle"></i> ' + name + '</a>');
+    }
 });
-
 
 // function submitData(){
 //     const fs =require('fs');

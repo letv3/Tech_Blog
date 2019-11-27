@@ -1,5 +1,4 @@
 @media only screen and (max-width: 700px){
-
     h1{
         font-size: 3rem !important;
     }
@@ -51,9 +50,26 @@ nav{
 }
 nav a{
     color: #000000;
-    font-size: 3rem;
+    font-size: 2.7rem;
     text-decoration: none;
     margin-left: 50px;
+    max-height: 70px;
+    line-height: 3rem;
+}
+nav a:hover{
+    color: #000000;
+}
+#regbut{
+    margin: 10% 0 0 50px;
+    background-color: #000000;
+    border-color: #000000;
+}
+#regbut:hover{
+    background-color: transparent;
+
+}
+.navbar-toggler{
+    border:1px solid #000;
 }
 header{
     height: 100vh;
@@ -88,17 +104,10 @@ footer ul{
     color: #ffffff;
     list-style: none;
     display: inline-block;
-    float: right;
     margin: 2% 5%;
 }
-ull{ 
-    color: #ededed;
-    /*float: right;*/
- 
-    text-align: right;
-}
-.container{
-
+footer img{
+    margin: 20px 0 0 50px;
 }
 ul a{
     color: #ffffff;
@@ -202,7 +211,7 @@ polygon.arrow-top {
      opacity: 0.5
  }
 .navbar-brand{
-    width: 3.5%;
+    max-width: 40px;
 }
 .card{
     width: 100%;

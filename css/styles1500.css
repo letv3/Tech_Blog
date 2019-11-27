@@ -4,5 +4,4 @@ section{
 footer,nav{
     background: rgb(94, 94, 94);
     background: linear-gradient(90deg, rgb(102, 38, 29) 45%, rgb(100, 17, 17) 100%);
-    height: auto;
 }

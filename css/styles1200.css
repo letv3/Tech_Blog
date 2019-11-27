@@ -6,6 +6,9 @@ footer,nav{
     /* background: linear-gradient(90deg, rgb(136, 233, 201) 45%, rgb(27, 204, 204) 100%); */
     height: auto;
 }
-ul,li,li a,ul ull{
+ul,li,li a,ul{
     color: black;
+}
+.nav-link{
+    font-size: 2rem;
 }
