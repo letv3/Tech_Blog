@@ -1,0 +1,21 @@
+/* section{
+    background-color: rgba(127,251,236,0.67);
+}
+.navbar, footer{
+    background: rgba(49,159,226,0.7);
+}
+.navbar-toggler{
+    color: aqua;
+} */
+
+section{
+    background-color: rgba(127,251,236,0.67);
+}
+footer,nav{
+    background: rgb(164,164,164);
+    background: linear-gradient(90deg, rgb(136, 233, 201) 45%, rgb(27, 204, 204) 100%);
+    height: auto;
+}
+ul,li,li a,ul ull{
+    color: black;
+}
